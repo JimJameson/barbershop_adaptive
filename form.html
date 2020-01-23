@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Записаться</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="" class="page-header__logo-link">
+        <img
+          src="img/logotype-mobile.svg"
+          width="226"
+          height="30"
+          alt="Барбершоп &laquo;Бородинский&raquo;"
+          class="page-header__logo-page"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Наши работы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Записаться</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="login.html" class="user-list__login">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">
+          Запись на стрижку
+        </h1>
+        <a href="index.html" class="button page-main__link">На главную</a>
+      </div>
+      <form action="https://echo.htmlacademy.ru" class="request">
+        <div class="request__wrapper">
+          <label for="name" class="visually-hidden">
+            Имя
+          </label>
+          <input
+            type="text"
+            id="name"
+            class="request__input request__input--name"
+            placeholder="Имя"
+          />
+          <label for="surname" class="visually-hidden">
+            Фамилия
+          </label>
+          <input
+            type="text"
+            id="surname"
+            class="request__input request__input--surname"
+            placeholder="Фамилия"
+          />
+          <label for="patronymic" class="visually-hidden">
+            Отчество
+          </label>
+          <input
+            type="text"
+            id="patronymic"
+            class="request__input request__input--patronymic"
+            placeholder="Отчество"
+          />
+        </div>
+        <div class="request__wrapper">
+          <label for="tel" class="visually-hidden">
+            Контактный телефон
+          </label>
+          <input
+            type="tel"
+            id="tel"
+            class="request__input request__input--tel"
+            placeholder="Контактный телефон"
+          />
+          <label for="email" class="visually-hidden">
+            Контактный e-mail
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="request__input request__input--email"
+            placeholder="Контактный e-mail"
+          />
+        </div>
+        <textarea
+          name="info"
+          id="info"
+          cols="30"
+          rows="10"
+          class="request__info"
+          placeholder="Доп. информация для мастера"
+        ></textarea>
+        <fieldset class="request__fieldset model">
+          <legend class="model__title">
+            Выберите модель бороды:
+          </legend>
+          <ul class="model__list">
+            <li class="model__item">
+              <label class="model__label model__label--admiral">
+                <input type="radio" class="model__radio" />
+                адмирал
+              </label>
+            </li>
+            <li class="model__item">
+              <label class="model__label model__label--lumberjack">
+                <input type="radio" class="model__radio" />
+                лесоруб
+              </label>
+            </li>
+            <li class="model__item">
+              <label class="model__label model__label--polar">
+                <input type="radio" class="model__radio" />
+                полярник
+              </label>
+            </li>
+            <li class="model__item">
+              <label class="model__label model__label--boyar">
+                <input type="radio" class="model__radio" />
+                боярин
+              </label>
+            </li>
+            <li class="model__item">
+              <label class="model__label model__label--sage">
+                <input type="radio" class="model__radio" />
+                мудрец
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="request__fieldset add-service">
+          <legend class="add-service__title">
+            Дополнительные услуги:
+          </legend>
+
+          <ul class="add-service__list">
+            <li class="add-service__item">
+              <label for="beard-color" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="beard-color"
+                  id="beard-color"
+                  class="add-service__checkbox"
+                />
+                Подкрасить бороду
+              </label>
+            </li>
+            <li class="add-service__item">
+              <label for="comb" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="comb"
+                  id="comb"
+                  class="add-service__checkbox"
+                />
+                Причесать бороду
+              </label>
+            </li>
+            <li class="add-service__item">
+              <label for="grey-hair" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="grey-hair"
+                  id="grey-hair"
+                  class="add-service__checkbox"
+                />
+                Убрать седину
+              </label>
+            </li>
+            <li class="add-service__item">
+              <label for="mustache" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="mustache"
+                  id="mustache"
+                  class="add-service__checkbox"
+                />
+                Накрутить усы
+              </label>
+            </li>
+            <li class="add-service__item">
+              <label for="trim-weight" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="trim-weight"
+                  id="trim-weight"
+                  class="add-service__checkbox"
+                />
+                Подровнять вески
+              </label>
+            </li>
+            <li class="add-service__item">
+              <label for="bald-head" class="add-service__label">
+                <input
+                  type="checkbox"
+                  name="bald-head"
+                  id="bald-head"
+                  class="add-service__checkbox"
+                />
+                Отполировать лысину
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="request__submit button">
+            Отправить заявку
+        </button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">
+            Барбершоп &laquo;Бородинский&raquo;
+          </b>
+          <p class="contacts__text">
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br />
+            <a href="tel:+78125556666" class="contacts__phone">
+              <span class="contacts__phone-mobile">
+                Тел.:
+              </span>
+              +7 (812) 555-66-66
+            </a>
+          </p>
+        </div>
+        <div class="page-footer__social social">
+          <b class="social__title">
+            Давайте дружить!
+          </b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                href="https://vk.com"
+                class="social__link social__link--vkontakte"
+              >
+                Мы в Вконтакте
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com"
+                class="social__link social__link--facebook"
+              >
+                Мы в Фейсбуке
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://instagram.com"
+                class="social__link social__link--instagram"
+              >
+                Мы в Инстаграмме
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">
+            Разработано:
+          </b>
+          <a href="https://htmlacademy.ru" class="button copyright__link">
+            HTML academy
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
