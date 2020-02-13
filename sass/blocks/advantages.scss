@@ -1,0 +1,49 @@
+.advantages {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.advantages__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.advantages__item {
+    margin: 40px;
+    padding-top: 130px;
+    
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &--fast {
+        background-image: url("../../img/advantage-1.svg");
+    }
+
+    &--cool {
+        background-image: url("../../img/advantage-2.svg");
+    }
+
+    &--price {
+        background-image: url("../../img/advantage-3.svg");
+    }
+}
+
+.advantages__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantages__description {
+    margin: 0;
+
+    font-size: 20px;
+    text-align: center;
+}
