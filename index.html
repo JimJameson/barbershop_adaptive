@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="css/all.css" />
   </head>
   <body>
     <header class="page-header">
       <a href="" class="page-header__logo-link">
         <img
-          src="img/logotype-mobile.svg"
+          src="img/logo-mobile.svg"
           width="226"
           height="30"
           alt="Барбершоп &laquo;Бородинский&raquo;"
-          class="page-header__logo-page"
         />
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -40,12 +44,23 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="login.html" class="user-list__login">Войти</a>
+              <a href="login.html" class="user-list__login">
+                <svg class="user-list__login-icon" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16" 
+                    viewBox="0 0 16 16">
+                    <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
+                    <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+                  </svg>
+                Войти
+              </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main class="page-main">
       <h1 class="visually-hidden">
         Барбершоп &laquo;Бородинский&raquo; - истинно мужская классика
@@ -75,14 +90,14 @@
             </td>
           </tr>
           <tr>
-            <td class="stats__value">7 200<sup>*</sup></td>
+            <td class="stats__value">7 200</td>
             <td class="stats__field">
-              секунд <br />
-              времени мастера
+              секунд времени<br />
+              мастера
             </td>
           </tr>
           <tr>
-            <td class="stats__value">90 000<sup>*</sup></td>
+            <td class="stats__value">90 000</td>
             <td class="stats__field">
               постриженных <br />
               волос
@@ -91,23 +106,24 @@
           <tr>
             <td class="stats__value">500 000<sup>*</sup></td>
             <td class="stats__field">
-              лайков <br />
-              и комплиментов
+              лайков и<br />
+              комплиментов
             </td>
           </tr>
         </table>
 
-        <small class="stats__legend stats__legend--top">
-          <sup>*</sup> - приведенные данные ложь
+        <small class="stats__legend stats__legend--bottom">
+          <sup>*</sup> — приведенные данные ложь
         </small>
       </section>
+
       <section class="advantages">
         <div class="advantages__wrapper slider">
           <h2 class="visually-hidden">
             Наши преимущества
           </h2>
           <ul class="advantages__list slider__list">
-            <li class="advantages__item advantages__item--fast slider__item">
+            <li class="advantages__item advantages__item--fast slider__item slider__item--current">
               <h3 class="advantages__title">
                 Быстро
               </h3>
@@ -136,9 +152,21 @@
             </li>
           </ul>
           <p class="advantages__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">
+                1
+              </span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">
+                2
+              </span>
+              </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">
+                3
+              </span>
+            </button>
           </p>
         </div>
       </section>
@@ -181,6 +209,7 @@
           <a href="#" class="news__to-all button">Показать все</a>
         </div>
       </section>
+
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title">
@@ -311,5 +340,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
