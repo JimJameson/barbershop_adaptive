@@ -1,0 +1,30 @@
+.slider__item {
+    display: none;
+}
+
+.slider__item--current {
+    display: block;
+}
+
+.slider__toggles {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__toggle {
+    margin: 0 10px;
+    padding: 0;
+    width: 9px;
+    height: 9px;
+
+    border: 1px solid #959595;
+    background-color: transparent;
+
+    transform: rotate(45deg);
+
+    cursor: pointer;
+
+    &--current {
+        background-color: #ffffff;
+    }
+}
