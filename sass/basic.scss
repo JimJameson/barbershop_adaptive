@@ -50,3 +50,39 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px; 
+  text-transform: uppercase; 
+  color: #000000;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  
+  padding: 10px;
+
+  border: 1px solid #e5ddd5;
+  
+  line-height: 24px;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+
+.contacts {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
