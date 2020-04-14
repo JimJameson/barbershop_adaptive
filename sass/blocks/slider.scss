@@ -9,10 +9,12 @@
 .slider__toggles {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .slider__toggle {
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 0;
     width: 9px;
     height: 9px;
