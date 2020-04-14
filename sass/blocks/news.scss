@@ -1,0 +1,154 @@
+.news {
+    position: relative;
+
+    width: 280px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid #e5ddd5;
+
+    background-color: #f8f5f2;
+    color: #000000;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border: 160px solid transparent; 
+        border-top: 34px solid #242424;
+        left: 0;
+        top: 0;
+          
+    }
+}
+.news__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news__item {
+   position: relative;
+
+   border-bottom: 1px solid #e5ddd5;
+
+    &:nth-child(2) {
+        border-bottom: none;
+    }
+
+   &:last-child {
+       display: none;
+   }
+}
+
+.news__date {
+    position: absolute;
+    top: 10px;
+
+    display: block;
+    padding: 5px 10px;
+    width: 30px;
+    margin-right: 0;
+
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+        border: 25px solid transparent; 
+        border-top: 10px solid #000000;
+    }
+}
+
+.news__day {
+   font-size: 30px;
+   line-height: 30px; 
+}
+
+.news__text {
+    padding: 0;
+    padding-left: 70px;
+}
+
+.news__to-all {
+    background-color: #f8f5f2;
+}
+
+@media (min-width: $tablet-width) {
+
+    .news {
+        width: 768px - 40px - 40px;
+        padding: 40px;
+        padding-top: 55px;
+
+        &::before {
+            border: 384px solid transparent; 
+            border-top: 42px solid $bg-darkgrey;
+    
+        }
+    }
+
+    .news__title {
+        margin-bottom: 50px;
+        
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .news__to-all {
+        position: absolute;
+        top: 80px;
+        right: 40px;
+    }
+
+    .news__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news__item {
+        width: 350px;
+        border: none;
+    }
+
+    .news__text {
+        padding-right: 20px;
+        margin: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .news {
+        width: 960px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 80px;
+        &::before {
+            border: 600px solid transparent; 
+            border-top: 65px solid $bg-darkgrey;
+        }
+
+    }
+
+    .news__title {
+        padding-left: 70px;
+    }
+
+    .news__item {
+
+        &:nth-child(3) {
+            display: block;
+        }
+    }
+
+    .news__to-all {
+        right: 120px;
+        top: 100px;
+    }
+}
