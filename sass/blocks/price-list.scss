@@ -1,0 +1,137 @@
+.price-list {
+    position: relative;
+    width: 320px - 20px - 20px;
+    padding: 20px;
+    padding-top: 70px;
+    margin: 0 auto;
+
+    background-color: #353535;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        border: 160px solid transparent;
+        border-top: 34px solid #f8f5f2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -194px;
+        left: 0;
+
+        border: 160px solid transparent;
+        border-top: 34px solid #353535;
+    }
+
+
+}
+
+.price-list__title {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    color: #ffffff;
+}
+
+.price-list__table {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+
+
+.price-list__add {
+    display: none;
+}
+
+.price-list__add-mobile {
+    display: block;
+}
+
+.price-list__price {
+    vertical-align: top;
+    text-align: right;
+}
+
+.price-list__diskount {
+    border: 1px solid #484848;
+    padding-left: 115px;
+    background: url(../../img/clock.svg) no-repeat 20px 50%;
+}
+
+@media (min-width: $tablet-width) {
+    .price-list {
+        width: 768px - 65px -65px;
+        padding: 65px;
+        padding-top: 85px;
+        padding-bottom: 60px;
+
+        &::before {
+            border: 384px solid transparent;
+            border-top: 42px solid #f8f5f2;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .price-list__title {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .price-list__table {
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+
+    .price-list__table td {
+        padding: 15px;
+
+        border: 1px solid #4a4a4a;
+    }
+
+    .price-list__table .price-list__number {
+        text-align: center;
+        opacity: 0.3;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .price-list__name {
+        font-weight: 700;
+    }
+
+    .price-list__add-mobile {
+        display: none;
+    }
+
+    .price-list__add {
+        display: table-cell;
+    }
+
+    .price-list__price {
+        text-align-last: left;
+    }
+
+    .price-list__diskount {
+        padding-left: 180px;
+    }
+
+    .price-list__discount-time {
+        font-size: 27px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .price-list__discount-time br {
+        display: none;
+    }
+}
