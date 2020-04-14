@@ -1,0 +1,227 @@
+.works {
+    position: relative;
+    width: 320px - 20px - 20px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    background-color: #f8f5f2;
+    color: #000;
+    
+
+}
+
+.works__title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.works__link {
+    display: none;
+}
+
+.works__work-month {
+    margin-bottom: 20px;
+}
+
+.works__work-month-description {
+    position: relative;
+}
+
+.works__work-month-figure {
+    margin: 0;
+}
+
+.works__work-month-image {
+    display: block;
+    width: 280px;
+    height: 480px;
+}
+
+.works__work-month-icon {
+    position: absolute;
+    box-sizing: border-box;
+    width: 165px;
+    height: 50px;
+    z-index: 1;
+    top: -80px;
+    left: -1px;
+
+    padding: 12px;
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #826550;
+    text-align: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        z-index: -1;
+        top: 0;
+        border: 25px solid #826550;
+        border-right: 10px solid transparent;
+    }
+}
+
+.client-description {
+    display: block;
+    padding: 20px;
+    border: 1px solid #e5ddd5;
+    border-top: none;
+    margin: 0;
+}
+
+.client-name {
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.services-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list__item {
+    position: relative;
+    padding: 5px;
+    padding-left: 35px;
+    margin-right: 25px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        width: 21px;
+        height: 20px;
+        position: absolute;
+        top: 8px;
+    }
+
+    &--haircut::before {
+        left: 0;
+        background: url(../../img/haircut.svg) no-repeat 0 0;
+    }
+
+    &--shaving {
+        padding-left: 40px;
+    }
+
+    &--shaving::before {
+        width: 23px;
+        height: 21px;
+
+        left: 0;
+        background: url(../../img/shaving.svg) no-repeat 0 0;
+    }
+
+    &--mustache {
+        padding-left: 50px;
+    }
+
+    &--mustache::before {
+        width: 45px;
+        height: 12px;
+        left: -10px;
+        top: 12px;
+        background: url(../../img/mustache.svg) no-repeat 0 0;
+    }
+
+}
+
+.works__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.works__item {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.works__figure {
+    margin: 0;
+}
+
+.works__image {
+    display: block;
+}
+
+@media (min-width: $tablet-width) {
+    .works {
+        position: relative;
+        width: 768px - 65px - 65px;
+        padding: 65px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 0;
+            border: 50px solid transparent; 
+            border-right: 384px solid #f8f5f2; 
+            border-left: 384px solid #f8f5f2;
+            border-bottom: 0 solid green;
+        }
+    }
+    .works__title {
+        text-align: left;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .works__link {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 65px;
+    }
+
+    .works__work-month-figure {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    }
+    
+    .client-description {
+        display: flex;
+        flex-direction: column;
+
+        padding: 45px;
+        padding-bottom: 35px;
+
+        border: 1px solid #e5ddd5;
+        border-left: none;
+    }
+
+    .services-list {
+        margin-top: auto;
+    }
+
+    .works__work-month-icon {
+        left: -283px;
+        top: 35px;
+    }
+
+    .works__figure {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    }
+}
